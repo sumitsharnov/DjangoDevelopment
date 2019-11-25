@@ -7,8 +7,9 @@ from .models import Vaccine
 
 @admin.register(Pet)
 class PetAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'species', 'breed', 'age', 'sex']
+
 
 @admin.register(Vaccine)
 class VaccineAdmin(admin.ModelAdmin):
-    pass
+    ist_display = ['name']
